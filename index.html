@@ -1,32 +1,101 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Hutchball</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CAKE.SQUARED</title>
+  <meta name="description" content="CAKE.SQUARED app links and socials">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="wrap">
-    <div class="badge">Hutchball</div>
-    <h1>App ideas. Built.</h1>
-    <p>Small, useful things — made in public.</p>
+  <main class="page" aria-label="CAKE.SQUARED links">
+    <section class="hero-card">
+      <div class="brand-orb" aria-hidden="true">
+        <img
+          src="assets/cake-logo.png"
+          alt=""
+          class="orb-image cake-logo"
+          loading="lazy"
+          decoding="async"
+        >
+      </div>
 
-    <div class="grid">
-      <a class="card" href="#" aria-label="BrainDump">
-        <h2>BrainDump</h2>
-        <p>Capture ideas fast. Sort later.</p>
-      </a>
-      <a class="card" href="#" aria-label="Wage Watcher">
-        <h2>Wage Watcher</h2>
-        <p>See what you’ve earned… live.</p>
-      </a>
-    </div>
+      <h1>CAKE.SQUARED</h1>
+      <p>Modern App Design</p>
+    </section>
 
-    <div class="row">
-      <a class="btn" href="https://github.com/hutchball">GitHub</a>
-      <a class="btn ghost" href="mailto:you@domain.com">Email</a>
-    </div>
+    <section class="links" aria-label="Projects">
+      <a class="orb-link" href="#" aria-label="Wage Watcher">
+        <div class="orb">
+          <img
+            src="assets/wage-watcher-icon.png"
+            alt=""
+            class="orb-image wage-icon"
+            loading="lazy"
+            decoding="async"
+          >
+        </div>
+        <div class="app-card" aria-hidden="true">
+          <h2>Wage Watcher</h2>
+          <p>Track your earnings in real time from your Apple Watch with a clean, glanceable interface.</p>
+        </div>
+        <span class="sr-only">Wage Watcher</span>
+      </a>
+
+      <a class="orb-link" href="#" aria-label="BrainDump">
+        <div class="orb">
+          <img
+            src="assets/brain-dump-icon.png"
+            alt=""
+            class="orb-image brain-icon"
+            loading="lazy"
+            decoding="async"
+          >
+        </div>
+        <div class="app-card" aria-hidden="true">
+          <h2>Brain Dump</h2>
+          <p>Capture ideas instantly and organize them later so nothing important slips away.</p>
+        </div>
+        <span class="sr-only">BrainDump</span>
+      </a>
+    </section>
+
+    <nav class="socials" aria-label="Social links">
+      <a href="https://dribbble.com" aria-label="Dribbble">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Z"/>
+          <path d="M5 5c4 1 8 6 10 14"/>
+          <path d="M3 12c4-1 10-1 18 2"/>
+          <path d="M12 2c2 3 4 6 4 10"/>
+        </svg>
+      </a>
+      <a href="https://x.com" aria-label="X">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 3h4l4 6 5-6h3l-7 8 8 10h-4l-5-7-6 7H3l8-9Z"/>
+        </svg>
+      </a>
+      <a href="https://github.com/hutchball" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 2a10 10 0 0 0-3 19.5c.5.1.7-.2.7-.5v-2c-3 .7-3.6-1.3-3.6-1.3-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1.1 3 .8.1-.7.4-1.1.7-1.4-2.4-.3-4.9-1.2-4.9-5.2 0-1.1.4-2 1-2.7-.1-.3-.4-1.4.1-2.8 0 0 .8-.3 2.8 1a9.8 9.8 0 0 1 5 0c2-1.3 2.8-1 2.8-1 .5 1.4.2 2.5.1 2.8.7.7 1 1.6 1 2.7 0 4-2.5 4.9-4.9 5.2.4.3.8 1 .8 2v3c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/>
+        </svg>
+      </a>
+      <a href="https://instagram.com" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="3" y="3" width="18" height="18" rx="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.2" cy="6.8" r="1"/>
+        </svg>
+      </a>
+      <a href="mailto:you@domain.com" aria-label="Email">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="3" y="5" width="18" height="14" rx="2"/>
+          <path d="m4 7 8 6 8-6"/>
+        </svg>
+      </a>
+    </nav>
   </main>
 </body>
 </html>
