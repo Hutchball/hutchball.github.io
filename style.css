@@ -268,8 +268,7 @@ body {
   stroke-linejoin: round;
 }
 
-.socials a:nth-child(2) svg,
-.socials a:nth-child(3) svg {
+.socials a.social-x svg {
   fill: currentColor;
   stroke: none;
 }
