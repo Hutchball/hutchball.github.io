@@ -360,6 +360,17 @@ body {
   color: #878d95;
 }
 
+.app-store-badge-link {
+  display: inline-block;
+  margin-top: 8px;
+}
+
+.app-store-badge {
+  display: block;
+  width: 180px;
+  height: auto;
+}
+
 .app-back-link {
   margin-top: -16px;
   color: #6b7077;
