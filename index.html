@@ -1,125 +1,117 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-GB">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>CAKE.SQUARED</title>
-  <meta name="description" content="CAKE.SQUARED app links and socials">
+  <meta name="description" content="CAKE.SQUARED apps for Apple platforms.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=20260227-1">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="assets/favicon.png" sizes="512x512" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css?v=20260912-7">
 </head>
-<body>
-  <main class="page" aria-label="CAKE.SQUARED links">
-    <section class="hero-card">
-      <div class="brand-orb" aria-hidden="true">
-        <img
-          src="assets/cake-logo.png"
-          alt=""
-          class="orb-image cake-logo"
-          loading="lazy"
-          decoding="async"
-        >
+<body data-app="home">
+  <main class="page-shell" aria-label="CAKE.SQUARED home">
+    <header class="topbar reveal" style="--d:0">
+      <a class="brand-mark" href="index.html" aria-label="CAKE.SQUARED home">
+        <img src="assets/cake-logo.png" alt="" width="36" height="36">
+        <span>CAKE.SQUARED</span>
+      </a>
+      <nav class="topbar-nav" aria-label="Primary">
+        <a class="nav-link" href="#apps">Apps</a>
+        <a class="nav-link" href="privacy-policy.html">Privacy</a>
+        <a class="nav-link" href="mailto:support@cakesquared.co.uk">Support</a>
+      </nav>
+    </header>
+
+    <section class="hero reveal" style="--d:1">
+      <div class="hero-simple">
+        <img class="hero-logo" src="assets/cake-logo.png" alt="" width="96" height="96">
+        <h1>CAKE.SQUARED</h1>
+        <p>Apple apps from CakeSquared.</p>
       </div>
-
-      <h1>CAKE.SQUARED</h1>
     </section>
 
-    <section class="links" aria-label="Projects">
-      <a class="orb-link" href="wage-watcher.html" aria-label="Wage Watcher">
-        <div class="orb">
-          <img
-            src="assets/wage-watcher-icon.png"
-            alt=""
-            class="orb-image wage-icon"
-            loading="lazy"
-            decoding="async"
-          >
-        </div>
-        <div class="app-card" aria-hidden="true">
-          <h2>Wage Watcher</h2>
-          <p>Track your earnings in real time from your Apple Watch.</p>
-        </div>
-        <span class="sr-only">Wage Watcher</span>
-      </a>
-
-      <a class="orb-link" href="brain-dump.html" aria-label="Brain Dump">
-        <div class="orb">
-          <img
-            src="assets/brain-dump-icon.png"
-            alt=""
-            class="orb-image brain-icon"
-            loading="lazy"
-            decoding="async"
-          >
-        </div>
-        <div class="app-card" aria-hidden="true">
-          <h2>Brain Dump</h2>
-          <p>Capture ideas instantly and organize them later.</p>
-        </div>
-        <span class="sr-only">Brain Dump</span>
-      </a>
-
-      <a class="orb-link" href="app-track.html" aria-label="App Track">
-        <div class="orb">
-          <img
-            src="assets/AppTrackBlackandWhite.png"
-            alt=""
-            class="orb-image app-track-icon"
-            loading="lazy"
-            decoding="async"
-          >
-        </div>
-        <div class="app-card" aria-hidden="true">
-          <h2>App Track</h2>
-          <p>Track your ideas</p>
-        </div>
-        <span class="sr-only">App Track</span>
-      </a>
-
-      <a class="orb-link" href="jim-bro.html" aria-label="Jim Bro">
-        <div class="orb">
-          <img
-            src="assets/jim-bro-icon.png"
-            alt=""
-            class="orb-image jim-bro-icon"
-            loading="lazy"
-            decoding="async"
-          >
-        </div>
-        <div class="app-card" aria-hidden="true">
-          <h2>Jim Bro</h2>
-          <p>Simple single page workout timer and Music Player</p>
-        </div>
-        <span class="sr-only">Jim Bro</span>
-      </a>
+    <section id="apps" class="section-heading reveal" style="--d:2">
+      <h2>Apps</h2>
     </section>
 
-    <nav class="socials" aria-label="Social links">
-      <a class="social-x" href="https://x.com" aria-label="X">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M4 3h4l4 6 5-6h3l-7 8 8 10h-4l-5-7-6 7H3l8-9Z"/>
-        </svg>
+    <section class="app-grid" aria-label="Apps">
+      <a class="app-tile reveal" style="--d:3" href="wage-watcher.html">
+        <div class="tile-head">
+          <div class="tile-icon-wrap tile-icon-wrap--dark">
+            <img src="assets/wage-watcher-icon.png" alt="" width="72" height="72" loading="lazy">
+          </div>
+        </div>
+        <div class="tile-body">
+          <h3>Wage Watcher</h3>
+          <p>Live earnings on Apple Watch — compare your pay with influential people.</p>
+        </div>
       </a>
-      <a href="https://instagram.com" aria-label="Instagram">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <rect x="3" y="3" width="18" height="18" rx="5"/>
-          <circle cx="12" cy="12" r="4"/>
-          <circle cx="17.2" cy="6.8" r="1"/>
-        </svg>
-      </a>
-      <a href="mailto:hello@cakesquared.co.uk" aria-label="Email">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <rect x="3" y="5" width="18" height="14" rx="2"/>
-          <path d="m4 7 8 6 8-6"/>
-        </svg>
-      </a>
-    </nav>
 
-    <footer class="page-footer">
-      <p>&copy; 2026 CakeSquared</p>
-      <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="mailto:support@cakesquared.co.uk">Support</a></p>
+      <a class="app-tile reveal" style="--d:4" href="app-track.html">
+        <div class="tile-head">
+          <div class="tile-icon-wrap">
+            <img src="assets/app-track-icon.png" alt="" width="72" height="72" loading="lazy">
+          </div>
+        </div>
+        <div class="tile-body">
+          <h3>AppTrack.er</h3>
+          <p>Track and organise app ideas, projects, and development sections.</p>
+        </div>
+      </a>
+
+      <a class="app-tile reveal" style="--d:5" href="jim-bro.html">
+        <div class="tile-head">
+          <div class="tile-icon-wrap tile-icon-wrap--dark">
+            <img src="assets/jim-bro-icon.png" alt="" width="72" height="72" loading="lazy">
+          </div>
+        </div>
+        <div class="tile-body">
+          <h3>Jim Bro</h3>
+          <p>Workout timer with Music, Shhh, and Boost on one screen.</p>
+        </div>
+      </a>
+
+      <a class="app-tile reveal" style="--d:6" href="interlude.html">
+        <div class="tile-head">
+          <div class="tile-icon-wrap tile-icon-wrap--dark">
+            <img src="assets/interlude-icon.png" alt="" width="72" height="72" loading="lazy">
+          </div>
+          <span class="status-pill">In review</span>
+        </div>
+        <div class="tile-body">
+          <h3>Interlude</h3>
+          <p>Radio static for live venues — fill dead air between songs and setup.</p>
+        </div>
+      </a>
+
+      <div class="app-tile app-tile--soon reveal" style="--d:7" aria-label="Brain Dump coming soon">
+        <div class="tile-head">
+          <div class="tile-icon-wrap">
+            <img src="assets/brain-dump-icon.png" alt="" width="72" height="72" loading="lazy">
+          </div>
+          <span class="status-pill">Coming soon</span>
+        </div>
+        <div class="tile-body">
+          <h3>Brain Dump</h3>
+          <p>Capture ideas quickly — more soon.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-card reveal" style="--d:8">
+      <div>
+        <p>&copy; 2026 CakeSquared</p>
+        <div class="footer-meta">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="mailto:support@cakesquared.co.uk">Support</a>
+          <a href="mailto:hello@cakesquared.co.uk">hello@cakesquared.co.uk</a>
+        </div>
+      </div>
     </footer>
   </main>
 </body>
