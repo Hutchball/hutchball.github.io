@@ -133,6 +133,9 @@ a { color: inherit; }
 
 .hero-simple h1 {
   font-size: clamp(48px, 10vw, 72px);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.01em;
   background: linear-gradient(180deg, #ffffff 20%, #c7d2fe 100%);
   -webkit-background-clip: text;
   background-clip: text;
