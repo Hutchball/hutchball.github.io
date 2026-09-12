@@ -477,6 +477,8 @@ a.app-tile:active {
 }
 
 body[data-app="wage-watcher"] { --accent: #79ebdd; --accent-soft: rgba(121, 235, 221, 0.2); }
+body[data-app="wage-watcher"] .wage-watcher-home { gap: 14px; }
+body[data-app="wage-watcher"] .wage-watcher-home .detail-hero-copy h1 { margin-top: 8px; }
 body[data-app="brain-dump"] { --accent: #ff8fc4; --accent-soft: rgba(255, 143, 196, 0.2); }
 body[data-app="app-track"] { --accent: #7cd8ff; --accent-soft: rgba(124, 216, 255, 0.2); }
 body[data-app="jim-bro"] { --accent: #ffb56c; --accent-soft: rgba(255, 181, 108, 0.2); }
