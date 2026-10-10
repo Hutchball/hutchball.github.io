@@ -728,3 +728,27 @@ body[data-app="privacy"] { --accent: #b9c8ff; --accent-soft: rgba(185, 200, 255,
 @media(max-width:860px){.setup-hero,.setup-grid{grid-template-columns:1fr}.setup-device-stage{min-height:430px}.setup-phone{transform:rotate(2deg) scale(.78);margin:-60px 0}.setup-intro{align-items:start;flex-direction:column}}
 @media(max-width:560px){.setup-path{padding:20px}.setup-hero{padding-top:18px}.setup-hero h1{font-size:62px}.setup-visual{height:220px}}
 @media(prefers-reduced-motion:reduce){.setup-phone{animation:none}}
+
+/* DotBop launch */
+body[data-app="dotbop"] { --accent: #a3e8ad; --accent-soft: rgba(163, 232, 173, 0.18); }
+body[data-app="dotbop"] .feature-card h2,
+body[data-app="dotbop"] .support-card h2,
+body[data-app="dotbop"] .privacy-card h2 { margin: 0 0 10px; font-size: 18px; }
+.store-badge { display: inline-flex; align-items: center; padding: 14px; }
+.store-badge img { display: block; width: 160px; height: auto; }
+body[data-app="dotbop"] a:focus-visible,
+body[data-app="dotbop"] .screenshot-rail:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+body[data-app="dotbop"] .screenshot-rail { scrollbar-color: var(--accent) transparent; }
+body[data-app="dotbop"] .detail-actions { align-items: center; }
+
+/* App details and App Store destinations are separate links. */
+.app-tile--linked { position: relative; }
+.tile-detail-link { text-decoration: none; }
+.tile-detail-link::after { content: ""; position: absolute; inset: 0; border-radius: var(--radius); }
+.store-status { position: relative; z-index: 1; min-height: 44px; text-decoration: none; }
+.store-status:hover { background: var(--accent-soft); border-color: var(--accent); }
+.app-tile--linked:focus-within,
+.app-tile--linked:hover { border-color: rgba(126, 200, 255, 0.5); background: rgba(255, 255, 255, 0.11); }
+.tile-detail-link:focus-visible { outline: none; }
+.tile-detail-link:focus-visible::after,
+.store-status:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
