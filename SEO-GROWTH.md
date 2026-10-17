@@ -6,7 +6,7 @@ Audit and implementation: 17 October 2026. Scope: all ten sitemap URLs and the l
 
 - App-page H1s were often slogans rather than app names and purposes; feature cards skipped from H1 to H3. Setup and privacy headings also needed clearer hierarchy.
 - Existing titles, descriptions, canonicals and Open Graph tags were present and unique. Improvements concern relevance and clarity, not missing metadata. BrainDump shared the generic brand social image.
-- Naming differed from the owner's supplied current names (WageWatcher, AppTrackr, BrainDump). Apple still lists Wage Watcher and AppTrack.er: retain their working destination URLs and recommend aligning store names separately.
+- Use AppTrack.er consistently, as confirmed by the owner and Apple's listing. WageWatcher and BrainDump retain the supplied styling. Apple still lists Wage Watcher; retain its working destination URL and confirm naming alignment separately.
 - SoftwareApplication schema already existed for five published apps; no standalone organisation/site identity or breadcrumb schema. BrainDump is unreleased and should not imply install availability.
 - App pages mostly sent visitors back to the homepage; relevant cross-app navigation and an explicit catalogue route were limited. Top download buttons and official screenshot rails already existed; lower-page download links also already existed.
 - Homepage and catalogue repeat the same app cards, but have different introductions and purposes. Retain both for now; inspect Google's canonical choices before deciding whether consolidation is warranted.
@@ -22,7 +22,7 @@ These are intent hypotheses, not measured volume, difficulty or ranking estimate
 | --- | --- | --- | --- |
 | DotBot | learn Morse code | Morse code game; Morse code for beginners; Morse code learning app; Apple Watch Morse code | Existing lessons, rescue game and haptics; do not claim suitability specifically for children without product validation. |
 | WageWatcher | live earnings calculator | Apple Watch earnings tracker; real-time wage calculator; salary per second; hourly pay tracker | Listing confirms estimated live earnings and hourly/annual settings. Not a take-home-pay or tax calculator; salary-per-second intent needs query testing. |
-| AppTrackr | app idea organiser | app development tracker; app project planner; development notes app; app release planner | Existing projects, stages, tasks and notes. Defer AI app development notes as a target: no verified AI feature. |
+| AppTrack.er | app idea organiser | app development tracker; app project planner; development notes app; app release planner | Existing projects, stages, tasks and notes. Defer AI app development notes as a target: no verified AI feature. |
 | BrainDump | quick thought capture | brain dump app; capture ideas quickly; thought capture app; organise ideas later | Preview-stage target only; no download URL or SoftwareApplication install claim. Defer ADHD-friendly positioning until tested and supported. |
 | Jim Bro | fitness instructor timer | gym class timer; workout music timer; workout and recovery timer; Apple Music workout controls | Existing timer and music controls; no new workout modes claimed. |
 | InterludeRadio | radio static sounds app | radio tuning sounds; sounds between songs; live performance changeover sounds; radio sound effects for live shows | Apple description confirms static, tuning and PA use. Broad radio searches largely concern station streaming, so avoid that intent. |
@@ -44,7 +44,7 @@ InterludeRadio research: live searches for the exact name and radio-tuning/live-
 
 Top CTAs are already next to the app explanation. Keep screenshot rails and lower-page downloads, and measure whether mobile visitors reach them before adding sticky controls. Existing real screenshots are preferable to invented mockups. Consider testing benefit-specific screenshot captions and the first screenshot after establishing a baseline; no new screenshots or redesign are required now.
 
-Owner action/approval needed: align App Store listing names with the website names; supply App Store Connect campaign links/tokens for acquisition attribution; confirm BrainDump release details and any ADHD positioning before publication. No approval is needed for the implemented static changes. No analytics, cookies, email capture, pop-ups or third-party paid tools introduced.
+Owner action/approval needed: confirm WageWatcher naming alignment with its App Store listing; supply App Store Connect campaign links/tokens for acquisition attribution; confirm BrainDump release details and any ADHD positioning before publication. No approval is needed for the implemented static changes. No analytics, cookies, email capture, pop-ups or third-party paid tools introduced.
 
 ## Measurement and external tools
 
@@ -72,4 +72,4 @@ Offline validator passes for ten canonical sitemap pages, eleven HTML files and 
 
 Modified: `index.html`, `apps/index.html`, `dotbot.html`, `wage-watcher.html`, `app-track.html`, `brain-dump.html`, `jim-bro.html`, `interlude.html`, `wage-watcher-setup.html`, `privacy-policy.html`, `style.css`, `README.md`. Added: `SEO-GROWTH.md`, `scripts/validate_seo.py`. Existing `dotbop.html`, `robots.txt`, `sitemap.xml`, asset files and App Store destination URLs are preserved.
 
-Screenshot follow-up: DotBot's supplied App Store artwork still visibly says “DotBop”, and AppTrackr artwork shows the earlier app name. These existing assets were preserved. Supply current official screenshots to remove the remaining visual naming mismatch; avoid editing UI images to imply a shipped version that has not been verified.
+Screenshot follow-up: DotBot's supplied App Store artwork still visibly says “DotBop”. These existing assets were preserved. Supply current official screenshots to remove the remaining visual naming mismatch; avoid editing UI images to imply a shipped version that has not been verified.
