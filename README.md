@@ -28,7 +28,7 @@ Use accessible layouts, readable typography, visible keyboard focus, generous to
 
 Keep each page's canonical, title, description, Open Graph metadata and app structured data aligned when editing it. Add new indexable pages to the sitemap; exclude redirects, duplicate aliases and noindex pages. App structured data describes existing features without inventing ratings, reviews or prices; rich-result eligibility is not guaranteed.
 
-DotBot is the current name supplied by the project owner. The existing `/dotbop.html` URL, lowercase asset paths and App Store URL are preserved. The App Store listing still displayed DotBop during this audit, and existing screenshot artwork may retain that name; align those assets and the store listing during the app rebrand.
+DotBot uses `/dotbot.html`, renamed asset paths and the current App Store URL. The legacy `/dotbop.html` page contains an instant meta refresh and canonical pointing to `/dotbot.html`; it is excluded from the sitemap. GitHub Pages serves static HTML, so this is a browser redirect rather than an HTTP 301. Google treats zero-second meta refresh redirects as permanent: [redirect guidance](https://developers.google.com/search/docs/crawling-indexing/301-redirects). Keep the legacy redirect to preserve existing inbound links.
 
 Validation: parse sitemap XML, check unique metadata and self-canonicals, validate structured JSON, check every local link/image/fragment, then verify all ten public URLs plus sitemap and robots return HTTP 200 after deployment. Responsive viewport tags, existing mobile breakpoints, reduced-motion rules and CSS are preserved; this is not a measured Core Web Vitals audit.
 

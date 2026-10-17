@@ -719,17 +719,17 @@ body[data-app="privacy"] { --accent: #b9c8ff; --accent-soft: rgba(185, 200, 255,
 @media(max-width:560px){.setup-path{padding:20px}.setup-hero{padding-top:18px}.setup-hero h1{font-size:62px}.setup-visual{height:220px}}
 @media(prefers-reduced-motion:reduce){.setup-phone{animation:none}}
 
-/* DotBop launch */
-body[data-app="dotbop"] { --accent: #a3e8ad; --accent-soft: rgba(163, 232, 173, 0.18); }
-body[data-app="dotbop"] .feature-card h2,
-body[data-app="dotbop"] .support-card h2,
-body[data-app="dotbop"] .privacy-card h2 { margin: 0 0 10px; font-size: 18px; }
+/* DotBot launch */
+body[data-app="dotbot"] { --accent: #a3e8ad; --accent-soft: rgba(163, 232, 173, 0.18); }
+body[data-app="dotbot"] .feature-card h2,
+body[data-app="dotbot"] .support-card h2,
+body[data-app="dotbot"] .privacy-card h2 { margin: 0 0 10px; font-size: 18px; }
 .store-badge { display: inline-flex; align-items: center; padding: 14px; }
 .store-badge img { display: block; width: 160px; height: auto; }
-body[data-app="dotbop"] a:focus-visible,
-body[data-app="dotbop"] .screenshot-rail:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
-body[data-app="dotbop"] .screenshot-rail { scrollbar-color: var(--accent) transparent; }
-body[data-app="dotbop"] .detail-actions { align-items: center; }
+body[data-app="dotbot"] a:focus-visible,
+body[data-app="dotbot"] .screenshot-rail:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+body[data-app="dotbot"] .screenshot-rail { scrollbar-color: var(--accent) transparent; }
+body[data-app="dotbot"] .detail-actions { align-items: center; }
 
 /* App details and App Store destinations are separate links. */
 .app-tile--linked { position: relative; }
@@ -792,7 +792,7 @@ body[data-app="wage-watcher"] .wage-icon-stage img { filter:none; }
 .pro-badge { color:#654400; background:#fff0ba; }
 .setup-app-preview small { color:#79ebdd; }
 .screenshot-card img { box-shadow:0 12px 30px #36445c18; }
-a:focus-visible,body[data-app="dotbop"] a:focus-visible { outline:3px solid #235a95; outline-offset:4px; }
+a:focus-visible,body[data-app="dotbot"] a:focus-visible { outline:3px solid #235a95; outline-offset:4px; }
 .skip-link { position:absolute;top:8px;left:16px;z-index:10;padding:12px;background:white;border-radius:12px;transform:translateY(-150%); }
 .skip-link:focus { transform:none; }
 html { scroll-padding-top:20px; }
