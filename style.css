@@ -805,3 +805,7 @@ html { scroll-padding-top:20px; }
   .detail-hero-grid { gap:24px; }
   .setup-hero { gap:22px; }
 }
+
+/* Expanded app pages: keyboard-accessible screenshot galleries. */
+.screenshot-rail:focus-visible { outline:3px solid #235a95; outline-offset:5px; border-radius:12px; }
+#support { scroll-margin-top:20px; }
