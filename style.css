@@ -809,3 +809,8 @@ html { scroll-padding-top:20px; }
 /* Expanded app pages: keyboard-accessible screenshot galleries. */
 .screenshot-rail:focus-visible { outline:3px solid #235a95; outline-offset:5px; border-radius:12px; }
 #support { scroll-margin-top:20px; }
+
+/* Keep semantic H2 card headings visually identical to the existing H3 cards. */
+.feature-card h2,.support-card h2,.privacy-card h2,.content-card h2 { margin:0 0 10px;font-size:18px;letter-spacing:-.025em; }
+.content-card h2 { margin-top:22px; }
+.breadcrumbs { margin:0 0 18px;flex-wrap:wrap; }

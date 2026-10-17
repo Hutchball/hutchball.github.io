@@ -32,7 +32,7 @@ DotBot uses `/dotbot.html`, renamed asset paths and the current App Store URL. T
 
 Validation: parse sitemap XML, check unique metadata and self-canonicals, validate structured JSON, check every local link/image/fragment, then verify all ten public URLs plus sitemap and robots return HTTP 200 after deployment. Responsive viewport tags, existing mobile breakpoints, reduced-motion rules and CSS are preserved; this is not a measured Core Web Vitals audit.
 
-Submit https://cakesquared.co.uk/sitemap.xml manually in Google Search Console → Indexing → Sitemaps after deployment.
+The sitemap is already submitted in Google Search Console. Monitor indexing after deployment; resubmit only if needed.
 
 Useful authoritative references:
 
@@ -42,3 +42,14 @@ Useful authoritative references:
 - [Google: mobile-first indexing](https://developers.google.com/search/docs/crawling-indexing/mobile/mobile-sites-mobile-first-indexing)
 - [Apple: testing performance with Instruments](https://developer.apple.com/documentation/xcode/improving-your-app-s-performance)
 - [Swift concurrency](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/)
+
+## Organic growth maintenance
+
+See [SEO-GROWTH.md](SEO-GROWTH.md) for the audit, per-app keyword hypotheses, implementation boundaries and Search Console/App Store measurement plan. Run `python3 scripts/validate_seo.py` from the repository root before publishing. The sitemap has already been submitted; monitor indexing rather than routinely resubmitting an unchanged sitemap.
+
+Further iOS engineering references:
+
+- [Understanding and improving SwiftUI performance](https://developer.apple.com/documentation/xcode/understanding-and-improving-swiftui-performance): reduce expensive view work and unnecessary updates.
+- [SwiftUI accessibility fundamentals](https://developer.apple.com/documentation/swiftui/accessibility-fundamentals): expose useful labels, values and actions with native controls.
+
+Use native platform behaviour, accessible text and controls, and measured performance work to guide iOS development. Profile before optimising; minimise repeated background work and unnecessary view updates to protect responsiveness and battery life.
