@@ -53,3 +53,24 @@ Further iOS engineering references:
 - [SwiftUI accessibility fundamentals](https://developer.apple.com/documentation/swiftui/accessibility-fundamentals): expose useful labels, values and actions with native controls.
 
 Use native platform behaviour, accessible text and controls, and measured performance work to guide iOS development. Profile before optimising; minimise repeated background work and unnecessary view updates to protect responsiveness and battery life.
+
+## PageSpeed improvements (19 October 2026)
+
+All rendered logos and app icons use responsive WebP assets with explicit HTML dimensions. Original PNG/JPEG artwork remains available for social metadata and future exports. The six homepage icons total 68,502 bytes at 280px versus 1,889,276 bytes for the originals (96.4% smaller). Browsers choose an appropriate candidate using `srcset` and `sizes`; actual transfer sizes depend on screen density. Regenerate with `python3 scripts/optimise_images.py` using Pillow, then update HTML filenames if the generated content hashes change. Review artwork after compression.
+
+Manrope is self-hosted as one 24,836-byte Latin variable WOFF2, preloaded with `crossorigin` and rendered with `font-display: swap`. It replaces the Google Fonts stylesheet, preconnects and remote font requests. Source: [Fontsource Manrope](https://fontsource.org/fonts/manrope); redistribution licence is in `assets/fonts/Manrope-OFL.txt`. Use a wider character subset if new languages require it. CSS URLs have a new version to refresh existing caches.
+
+The Coming soon badge uses `#465166` on `#e9edf3`, meeting WCAG AA normal-text contrast. Existing styling, content and SEO metadata are retained.
+
+### Hosting and cache lifetimes
+
+This repository is configured for GitHub Pages. Its HTTP cache lifetimes are controlled by the hosting service, not HTML or CSS. No ineffective `_headers` or `.htaccess` file has been added. Smaller images reduce both first-load cost and the bytes affected by the short-cache warning. Generated images and the local font have content hashes, ready for long caching if a configurable hosting/CDN layer is introduced. On such a host, use `Cache-Control: public, max-age=31536000, immutable` only for content-hashed files; keep HTML revalidated and avoid applying immutable caching indiscriminately to original assets. Hosting/CDN changes are a separate deployment task.
+
+Validation: existing SEO validator passes. Local Chrome checks at 390px and 1280px verify homepage, app listing, Jim Bro detail and WageWatcher setup: no horizontal overflow, missing dimensions, failed image loads or Google Fonts requests; Manrope loads successfully. Mobile homepage screenshot visually reviewed. Run PageSpeed Insights again after publishing; no new live score is claimed.
+
+Further performance references:
+
+- [Google: properly size images](https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/)
+- [Google: web font loading](https://web.dev/articles/optimize-webfont-loading)
+- [Google: HTTP caching](https://web.dev/articles/http-cache)
+- [Chrome DevTools: contrast](https://developer.chrome.com/docs/devtools/accessibility/contrast)
