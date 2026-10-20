@@ -24,7 +24,7 @@ Use accessible layouts, readable typography, visible keyboard focus, generous to
 
 ## Search indexing and maintenance
 
-`sitemap.xml` lists the ten public canonical HTML pages, including the distinct `/apps/` directory and the Brain Dump coming-soon page. Index-file aliases are excluded. No `lastmod` values are supplied because reliable content modification dates are not maintained. `robots.txt` allows crawling and declares the sitemap. GitHub Pages serves both files directly from the repository root.
+`sitemap.xml` lists the ten public canonical HTML pages, including the distinct `/apps/` directory and the BrainDump app page. Index-file aliases are excluded. No `lastmod` values are supplied because reliable content modification dates are not maintained. `robots.txt` allows crawling and declares the sitemap. GitHub Pages serves both files directly from the repository root.
 
 Keep each page's canonical, title, description, Open Graph metadata and app structured data aligned when editing it. Add new indexable pages to the sitemap; exclude redirects, duplicate aliases and noindex pages. App structured data describes existing features without inventing ratings, reviews or prices; rich-result eligibility is not guaranteed.
 
@@ -74,3 +74,7 @@ Further performance references:
 - [Google: web font loading](https://web.dev/articles/optimize-webfont-loading)
 - [Google: HTTP caching](https://web.dev/articles/http-cache)
 - [Chrome DevTools: contrast](https://developer.chrome.com/docs/devtools/accessibility/contrast)
+
+## BrainDump App Store launch (20 October 2026)
+
+BrainDump is available on the App Store. The homepage and app directory lead with BrainDump, WageWatcher, then DotBot. BrainDump copy focuses on capturing day-to-day thoughts, revisiting them later and choosing what to bin or keep, including its usefulness for people with ADHD. Keep download links and metadata aligned with the detail page.
