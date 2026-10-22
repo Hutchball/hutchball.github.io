@@ -815,3 +815,7 @@ html { scroll-padding-top:20px; }
 .feature-card h2,.support-card h2,.privacy-card h2,.content-card h2 { margin:0 0 10px;font-size:18px;letter-spacing:-.025em; }
 .content-card h2 { margin-top:22px; }
 .breadcrumbs { margin:0 0 18px;flex-wrap:wrap; }
+
+/* Keep the live approval badge at its supplied size, shrinking on narrow screens. */
+.pixelpicked-badge{display:block;width:250px;max-width:100%;margin-top:12px;border-radius:8px}
+.pixelpicked-badge img{display:block;width:100%;height:auto}

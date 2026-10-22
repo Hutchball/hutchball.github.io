@@ -78,3 +78,7 @@ Further performance references:
 ## BrainDump App Store launch (20 October 2026)
 
 BrainDump is available on the App Store. The homepage and app directory lead with BrainDump, WageWatcher, then DotBot. BrainDump copy focuses on capturing day-to-day thoughts, revisiting them later and choosing what to bin or keep, including its usefulness for people with ADHD. Keep download links and metadata aligned with the detail page.
+
+## PixelPicked badge (22 October 2026)
+
+DotBot’s homepage card, app directory card and detail page link to its PixelPicked listing using the supplied live light-theme badge. Keep the remote image URL so its approval status stays current. Explicit image dimensions reserve layout space; responsive sizing prevents overflow on small screens.
