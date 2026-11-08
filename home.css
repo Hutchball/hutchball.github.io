@@ -6,3 +6,4 @@ html{scroll-padding-top:20px}body{min-height:100vh}.small-link,.details,footer a
 /* Keep the live approval badge at its supplied size, shrinking on narrow screens. */
 .pixelpicked-badge{display:block;width:250px;max-width:100%;margin-top:12px;border-radius:8px}
 .pixelpicked-badge img{display:block;width:100%;height:auto}
+.appadswap-slot{margin-top:28px}
